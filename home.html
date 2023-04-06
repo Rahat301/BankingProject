@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1 class="text-3xl text-center mt-12">Your Account Details <span class="text-red-400 font-semibold">Showing Below</span></h1>
+
+    <section class="grid md:grid-cols-3 grid-cols-1 gap-4 mt-12 container mx-auto">
+        <div class="bg-green-100 p-8 rounded shadow-lg">
+           <p class="text-2xl">Deposite</p>
+           <p class="text-4xl">$ <span id="depositeAmmount">00</span></p>
+        </div>
+        <div class="bg-red-100 p-8 rounded shadow-lg">
+           <p class="text-2xl">Withdraw</p>
+           <p class="text-4xl">$ <span id="withdraw_ammount">00</span></p>
+        </div>
+        <div class="bg-purple-100 p-8 rounded shadow-lg">
+           <p class="text-2xl">Total Balance</p>
+           <p class="text-4xl">$ <span id="total_balance">1400</span></p>
+        </div>
+        
+    </section>
+
+
+    <section class="mt-16 grid md:grid-cols-2 grid-cols-1 container mx-auto gap-4">
+        <div class="bg-blue-200 rounded shadow-lg p-8">
+            <p class="text-2xl">Please Deposite</p>
+
+            <input class="block my-4 p-2 w-1/2 rounded" placeholder="$$" type="number" name="" id="depositeInput">
+            <button id="login_btn" class="inline-block bg-red-400 px-3 py-2 text-white rounded hover:bg-red-500">Deposite</button>
+
+        </div>
+        <div class="bg-cyan-200 rounded shadow-lg p-8">
+            <p class="text-2xl">Please Withdraw</p>
+
+            <input class="block my-4 p-2 w-1/2 rounded" placeholder="$$" type="number" name="" id="Withdraw_input">
+            <button id="withdraw_btn" class="inline-block bg-red-400 px-3 py-2 text-white rounded hover:bg-red-500">Withdraw</button>
+
+        </div>
+    </section>
+
+    <!-- talwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Home.js file add-->
+    <script src="home.js"></script> 
+
+</body>
+</html>
